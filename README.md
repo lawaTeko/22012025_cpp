@@ -1,1 +1,1 @@
-<h2></h2>
+<h2>A simple C++ program for managing student and lecturer data. Users can select a data type, input their name, ID, and major, and view the entered data in an organized format. The dataUser function separates the input and output logic based on the user type. </h2>
