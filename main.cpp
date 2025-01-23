@@ -10,20 +10,20 @@ void dataUser(string tipe, string idLabel){
 	cout << "===================" << endl;
 	cout << "FORM DATA " << tipe << endl;
 	cout << "===================" << endl;
-	cout << "masukan Nama 	 : ";
+	cout << "MASUKAN NAMA 	 : ";
 	getline(cin, nama);
-	cout << "masukan " << idLabel << "      : ";
+	cout << "MASUKAN " << idLabel << "      : ";
 	getline(cin, id);
-	cout << "masukan Jurusan  : ";
+	cout << "MASUKAN JURUSAN  : ";
 	getline(cin, jurusan);
 	
 	cout << endl;
 	
 	// output
 	cout << "=== DATA " << tipe << " ===" << endl;
-	cout << "Nama  	 : " << nama << endl;
+	cout << "NAMA  	 : " << nama << endl;
 	cout << idLabel << "      : " << id << endl;
-	cout << "Jurusan  : " << jurusan << endl;
+	cout << "JURUSAN  : " << jurusan << endl;
 }
 
 
@@ -34,19 +34,19 @@ int main(){
 	// Input opsi
 	cout << "===================" << endl;
 	cout << "FORM PENGISIAN DATA" << endl;
-	cout << "1. Mahasiswa" << endl;
-	cout << "2. Dosen" << endl;
+	cout << "1. Data Mahasiswa" << endl;
+	cout << "2. Data Dosen" << endl;
 	cout << "===================" << endl;
-	cout << "Masukkan Pilihan Anda 1 / 2? ";
+	cout << "Masukkan Pilihan Anda [1-2]: ";
 	cin >> opsi;
 	cin.ignore();
 	
 	if (opsi == 1){
-		dataUser("MAHASISWA", "Nim");
+		dataUser("MAHASISWA", "NIM");
 	}else if(opsi == 2){
-		dataUser("DOSEN", "Nrp");
+		dataUser("DOSEN", "NRP");
 	}else{
-		cout << "Tidak Tersedia" << endl;
+		cout << "Pilihan yang anda masukan tidak tersedia. Terimakasih." << endl;
 	}
 	
 	return 0;
